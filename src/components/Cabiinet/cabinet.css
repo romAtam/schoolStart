@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.App{
+    background-color: green;
+    width: 80%;
+    padding:15px;
+    margin:15px;
+}
+.root{
+    background-color:red;
+    padding:15px;
+  
+
+    display: flex;
+    justify-content: center;
+   /* justify-content: flex-end; */
+}
+.post{
+    display: flex;
+    background-color:brown;
+    justify-content:space-between;
+    padding:15px;
+    border:1px solid blue;
+    margin-top:15px;
+    
+    /* justify-content:start;
+    justify-content: space-around; */
+    align-items: center;
+}
+   .post__btns{
+       background-color:orange;
+       padding:15px;
+   }
+   .btn{
+       color:white;
+    background-color:rgb(39, 32, 20);
+    padding:15px;
+   }
+   .str{
+margin-right: 20px;
+   
+    color:white;
+    background-color:rgb(39, 32, 20);
+   }
+   .post__content{
+       color:white;
+       padding:15px;
+   width:100%;
+      display: flex;
+    background-color: blue;
+ 
+   }
