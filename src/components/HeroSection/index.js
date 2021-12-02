@@ -17,7 +17,7 @@ const HeroSection = ({header,descr,video}) => {
                <HeroH1>{header}</HeroH1>
                <HeroP>{descr}  </HeroP>
                <HeroBtnWrapper>
-                   <Button dark='true' primary='true' onMouseLeave={onHover} onMouseEnter={onHover} to='signup'>Запишіться{hover?<ArrowForward/>:<ArrowRight/>}</Button>
+                   <Button dark='true' primary='true' onMouseLeave={onHover} onMouseEnter={onHover} to='signup'>дізнатися Більше{hover?<ArrowForward/>:<ArrowRight/>}</Button>
 
                </HeroBtnWrapper>
 

@@ -6,18 +6,18 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding: 0 30px; 
-height:800px;
+height:820px;
 position: relative;
 z-index:1;
 :before{
     content:'';
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(0deg, rgba(0,0,0,0)0%,rgba(0,0,0,1)100%),
-    linear-gradient(180deg, rgba(0,0,0,0)0%,rgba(0,0,0,0.9)100%);
+    background:  
+     linear-gradient(180deg, rgba(0,0,0,0)0%,rgba(0,0,0,0.9)100%);
     z-index:2;
 
 }
@@ -25,7 +25,7 @@ z-index:1;
 `
 export const HeroBg=styled.div`
 position: absolute;
-top: 0;
+top: -80px;
 right: 0;
 bottom: 0;
 left: 0;
@@ -67,9 +67,9 @@ export const HeroP=styled.p`
 background: rgba(0,0,0,0.5);
 box-shadow: 5px 5px 15px 5px #000000;
 
-margin-top: 24px;
-line-height: 1.5rem; 
-color:#01bf71;
+margin: 24px;
+line-height: 2.5rem; 
+color:#3DB2FF;
 font-size:24px;
 text-align: center;
 max-width:600px;
@@ -82,6 +82,7 @@ max-width:600px;
 `
 export const HeroBtnWrapper=styled.div`
 margin-top:32px;
+
 display:flex;
 flex-direction: column;
 align-items: center;

@@ -6,9 +6,9 @@ export const  homeObjOne={
     lightBg:false,
     lightText:true,
     lightTextDesc:true,
-    topLine:'Ми відкрили курси програмування для дітей',
-    headline:'Що таке STEM?',
-    description:'Це абсолютно новий напрямок в науці, що має на увазі гармонійне поєднання «в одному флаконі» науки, технологій, інженерії, математики',
+    topLine:'find team and create your own IT corporation',
+    headline:'Буде складно, але цікаво!',
+    description:' гармонійне поєднання «в Business» науки, технологій, інженерії, математики,',
     buttonLabel:'дізнатися Більше',
     imgStart:false,
     img: img1,
@@ -38,9 +38,9 @@ export const  homeObjThree={
     lightBg:false,
     lightText:true,
     lightTextDesc:true,
-    topLine:'Підготовка до ЗНО',
-    headline:'Буде складно, але цікаво!',
-    description:'Учень якісно засвоїть матеріал, пройде безліч пробних тестувань з математики і повністю вникне в курс - це гарантують наші досвідчені викладачі під час підготовки до ЗНО.',
+    topLine:'our TEAM',
+    headline:'ONLY PROFESSIONAL PROGRAMMERS',
+    description:'Учень якісно засвоїть матеріал, пройде безліч пробних тестувань і повністю вникне в курс - це гарантують наші досвідчені викладачі під час підготовки',
     buttonLabel:'Детальніше',
     imgStart:false,
     img: img3,
@@ -50,18 +50,22 @@ export const  homeObjThree={
     darkText:false
 };
 export const  info1={
-header:'futurum venit',
-descr:`Nox cadit et luna stultorum captat`
+header:`Business school `,
+
+
+descr:`„Если Вашего бизнеса нет в Интернете, то Вас нет в бизнесе!“ —  Билл Гейтc`,
 
 };
 export const  info2={
-    header:'Pater i terebravisse',
-    descr:`Професійні комп'ютерні курси для дітей`
+    header:`IT shool`,
+    descr:`„Компьютеры — это как велосипед. Только для нашего сознания.“ —  Стив Джобс`
+
+   
     
     };
     export const  info3={
-        header:' Est campus magicus in terra stultorum',
-        descr:`denarios crescent in parva arbore pro aureis foliis.`
+        header:' WEB  and Game developer',
+        descr:`UNITY vs REACT`
 
         
         

@@ -1,6 +1,6 @@
 import React from 'react'
-import Video from '../../videos/video.mp4'
-import{HeroBg,VideoBg} from '../HeroSection/HeroElements'
+import Video from '../../videos/game.mp4'
+import{HeroBg,VideoBg,HeroContainer} from '../HeroSection/HeroElements'
 import {Container, FormInput, FormWrap, Icon,FormContent ,Form,FormH1,FormLabel,FormButton,Text} from './SigninElements'
 
 const Signin = () => {
@@ -16,13 +16,13 @@ const Signin = () => {
          
               
  <FormWrap>
-                <Icon to='/'>ITsmile</Icon>
+                {/* <Icon to='/'></Icon> */}
                 <FormContent>
                     <Form action="#">
-                        <FormH1>Sign In to your account</FormH1>
+                        <FormH1>password</FormH1>
                         <FormLabel htmlFor='for'>Email</FormLabel>
                         <FormInput autoFocus type='email' required/>
-                        <FormButton type='submit'>Continue</FormButton>
+                        <FormButton to='/cabinet' >Continue</FormButton>
                         <Text>Forgot Password</Text>
 
 

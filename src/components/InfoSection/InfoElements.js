@@ -44,7 +44,7 @@ padding-top: 0;
 padding-bottom: 60px;
 `
 export const TopLine=styled.p`
-color:#01bf71;
+color:yellow;
 font-size: 16px;
 line-height: 16px;
 font-weight: 700;

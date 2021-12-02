@@ -1,9 +1,10 @@
 import React from 'react'
-import {Button}from '../ButtonElement'
-
+import {Button,ButtonR}from '../ButtonElement'
+import {Link as LinkR,useParams} from 'react-router-dom'
 import {InfoContainer,InfoWrapper,InfoRow,Column1,TextWrapper,TopLine,Heading,Subtitle,BtnWrap, Column2, ImgWrap, Img} from './InfoElements'
-const InfoSection = ({primary,dark,dark2,img,alt,lightBg,imgStart,topLine,id,lightText,headline,description,darkText,buttonLabel}) => {
-    
+const InfoSection = ({primary,dark,dark2,img,alt,lightBg,imgStart,topLine,id,lightText,headline,description,darkText,buttonLabel,page}) => {
+    const params=useParams()
+    console.log(params);
     return (
        <>
        <InfoContainer lightBg={lightBg} id={id}>
@@ -15,10 +16,11 @@ const InfoSection = ({primary,dark,dark2,img,alt,lightBg,imgStart,topLine,id,lig
                        <Heading lightText={lightText}>{headline}</Heading>
                        <Subtitle darkText={darkText}>{description}</Subtitle>
                        <BtnWrap>
-                           <Button 
+                         
+                           <ButtonR 
                            dark={dark?1:0}
                            dark2={dark2?1:0}
-                           primary={primary?1:0} smooth={true} duration={500} spy={true} exact={true} offset={-80} to='home'>{buttonLabel}</Button>
+                           primary={primary?1:0} smooth="true" duration={500} spy="true" exact="true" offset={-80} to={`/${page}`}>{buttonLabel}</ButtonR>
                        </BtnWrap>
                    </TextWrapper>
                    </Column1>

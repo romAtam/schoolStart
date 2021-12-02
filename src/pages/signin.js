@@ -1,5 +1,5 @@
-import React,{useState} from 'react'
-import Signin from '../components/Signin'
+
+import Signin from '../components/Signin/'
 
 
 
@@ -9,10 +9,10 @@ import Signin from '../components/Signin'
 
 
 const SigninPage = () => {
-  const{show,setShow}=useState(false)
+  
     return (
         <div>
-          {show&& <Signin/>}
+          <Signin/>
          
         </div>
     )

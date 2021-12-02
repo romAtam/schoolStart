@@ -9,18 +9,18 @@ import{ServicesContainer,ServicesH1,ServicesWrapper,ServicesCard,ServicesH2,Serv
 const Services = () => {
     return (
        <ServicesContainer id='курси'>
-           <ServicesH1>Курси для дітей</ServicesH1>
+           <ServicesH1>програма для дітей</ServicesH1>
            <ServicesWrapper>
-               <ServicesCard>
+               {/* <ServicesCard>
                    <ServicesIcon src={Icon1}/>
                    <ServicesH2>IT-Start</ServicesH2>
                    <ServicesP>Комп'ютерна підготовка для дітей 1-3 класів</ServicesP>
-               </ServicesCard>
-               <ServicesCard>
+               </ServicesCard> */}
+               {/* <ServicesCard>
                    <ServicesIcon src={Icon2}/>
                    <ServicesH2>Minecraft: Програмування на Python </ServicesH2>
-                   <ServicesP>  інструмент творчості для дітей .</ServicesP>
-               </ServicesCard>
+                   <ServicesP>  інструмент творчості.</ServicesP>
+               </ServicesCard> */}
                <ServicesCard>
                    <ServicesIcon src={Icon3}/>
                    <ServicesH2>Відеоблогінг</ServicesH2>
@@ -34,8 +34,9 @@ const Services = () => {
                </ServicesCard>
                <ServicesCard>
                    <ServicesIcon src={Icon5}/>
-                   <ServicesH2>  «Робототехніка Lego» </ServicesH2>
-                   <ServicesP>збирати робомоделі зможе дитина(від 6-8 років) </ServicesP>
+                   <ServicesH2>  «Робототехніка Lego»</ServicesH2>
+                   <ServicesP>
+                        збирати робомоделі (від 6-8 років) </ServicesP>
                </ServicesCard>
                <ServicesCard>
                    <ServicesIcon src={Icon6}/>
@@ -44,8 +45,8 @@ const Services = () => {
                </ServicesCard>
                <ServicesCard>
                    <ServicesIcon src={Icon3}/>
-                   <ServicesH2>  «Робототехніка Lego» </ServicesH2>
-                   <ServicesP>збирати робомоделі (від 6-8 років) </ServicesP>
+                   <ServicesH2>   «Graphic designer » </ServicesH2>
+                   <ServicesP>Illustrator,Photoshop,After Effect ,Figma</ServicesP>
                </ServicesCard>
                <ServicesCard>
                    <ServicesIcon src={Icon3}/>

@@ -23,6 +23,7 @@ const Navbar = ({ toggle }) => {
     }
   };
   useEffect(() => {
+    toggleHome()
     window.addEventListener("scroll", changeNav);
   }, []);
   const toggleHome = () => {
@@ -34,7 +35,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo onClick={toggleHome} to="/">
-              ITsmile
+              simplyc<b>IT</b>y
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
@@ -43,58 +44,63 @@ const Navbar = ({ toggle }) => {
               <NavItem>
                 <NavLinks
                   offset={-80}
-                  exact="true"
-                  spy={true}
-                  smooth={true}
+                  exact={true}
+                  spy='true'
+                  smooth="true"
                   duration={500}
-                  to="Про нас"
+                  to="/kids"
                 >
                   {" "}
-                  Про нас
+                  {/* <span style={{color:"red",fontWeight:"bold"}}>K</span>
+                  <span style={{color:"orange",fontWeight:"bold"}}>i</span>
+                  <span style={{color:"yellow",fontWeight:"bold"}}>d</span>
+                  <span style={{color:"white",fontWeight:"bold"}}>s</span>
+                <span style={{color:"orange",fontWeight:"bold"}}>IT</span> */}
+                kidsIT
                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks
                   offset={-80}
-                  exact="true"
-                  spy={true}
-                  smooth={true}
+                  exact={true}
+                  spy='true'
+                  smooth="true"
                   duration={500}
-                  to="Франшиза"
+                  to="/game"
                 >
                   {" "}
-                  Франшиза
+               Game
                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks
                   offset={-80}
-                  exact="true"
-                  spy={true}
-                  smooth={true}
+                  exact={true}
+                  spy='true'
+                  smooth="true"
                   duration={500}
-                  to="курси"
+                  to="/web"
                 >
                   {" "}
-                  курси
+                 Web
                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks
                   offset={-80}
-                  exact="true"
-                  spy={true}
-                  smooth={true}
+                  exact={true}
+                  spy='true'
+                  smooth="true"
                   duration={500}
-                  to="ЗНО"
+                  to="/team"
                 >
                   {" "}
-                  ЗНО
+                 Team
                 </NavLinks>
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to="/cabinet">Кабінет учня</NavBtnLink>
+              <NavBtnLink to="/signin">Кабінет учня</NavBtnLink>
             </NavBtn>
           </NavbarContainer>
         </Nav>

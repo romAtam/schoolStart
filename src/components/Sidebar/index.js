@@ -3,23 +3,27 @@ import React from 'react'
 import{SidebarContainer,SidebarLink,SideBtnWrap,SidebarRoute,SidebarWrapper,SidebarMenu,Icon,CloseIcon} from './SidebarElements'
 const Sidebar = ({isOpen,toggle}) => {
     return (
-       <SidebarContainer isOpen={isOpen} onClick={toggle}>
+        <>
+           
+          <SidebarContainer isOpen={isOpen} onClick={toggle}>
+              
            <Icon onClick={toggle}>
                <CloseIcon/>
             </Icon>
             <SidebarWrapper >
                 <SidebarMenu>
-                    <SidebarLink to='Про нас' onClick={toggle}>
-                    Про нас
+                  
+                    <SidebarLink to='/game' onClick={toggle}>
+                   Game developer
                     </SidebarLink>
-                    <SidebarLink to='Франшиза' onClick={toggle}>
-                    Франшиза
+                    <SidebarLink to='/web' onClick={toggle}>
+                   Web developer
                     </SidebarLink>
-                    <SidebarLink to='курси' onClick={toggle}>
-                    курси
-                    </SidebarLink>
-                    <SidebarLink to='ЗНО' onClick={toggle}>
-                    ЗНО
+                    <SidebarLink to='team' onClick={toggle}>
+                    our Team
+                    </SidebarLink>  
+                    <SidebarLink to='/kids' onClick={toggle}>
+              kidsIT
                     </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
@@ -28,6 +32,8 @@ const Sidebar = ({isOpen,toggle}) => {
 
             </SidebarWrapper> 
        </SidebarContainer>
+        </>
+     
     )
 }
 
