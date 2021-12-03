@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
+
 import {
   MobileIcon,
   NavBtn,
@@ -51,11 +52,7 @@ const Navbar = ({ toggle }) => {
                   to="/kids"
                 >
                   {" "}
-                  {/* <span style={{color:"red",fontWeight:"bold"}}>K</span>
-                  <span style={{color:"orange",fontWeight:"bold"}}>i</span>
-                  <span style={{color:"yellow",fontWeight:"bold"}}>d</span>
-                  <span style={{color:"white",fontWeight:"bold"}}>s</span>
-                <span style={{color:"orange",fontWeight:"bold"}}>IT</span> */}
+            
                 kidsIT
                 </NavLinks>
               </NavItem>

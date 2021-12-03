@@ -5,6 +5,7 @@ import Icon3 from '../../images/blog.svg'
 import Icon5 from '../../images/robot.svg'
 import Icon4 from '../../images/unity.svg'
 import Icon6 from '../../images/anim.svg'
+import Footer from "../Footer/"
 import {HeroBg,VideoBg} from "../HeroSection/HeroElements"
 import { animateScroll as scroll } from "react-scroll";
 import video from "../../videos/web.mp4"
@@ -22,7 +23,7 @@ const Courses = () => {
                <VideoBg playbackRate="0.1" autoPlay loop muted src={video} type='video/mp4'/>
            </HeroBg>
          <ServicesContainer id='курси'>
-           <ServicesH1 style={{color:"yellow",zIndex:"888"}}>WEB DEV</ServicesH1>
+           <ServicesH1 style={{color:"yellow",zIndex:"888",fontWeight:"100"}}>WEB DEV</ServicesH1>
            <ServicesWrapper>
                <ServicesCard>
                    <ServicesIcon src={Icon1}/>
@@ -60,7 +61,7 @@ const Courses = () => {
          
 
        </ServicesContainer>
-
+<Footer/>
         </>
        
         

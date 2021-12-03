@@ -9,6 +9,7 @@ import {HeroBg,VideoBg} from "../HeroSection/HeroElements"
 import { animateScroll as scroll } from "react-scroll";
 import video from "../../videos/signin.mp4"
 import{ServicesContainer,ServicesH1,ServicesWrapper,ServicesCard,ServicesH2,ServicesP,ServicesIcon} from './GameDevElements'
+import Footer from '../Footer';
 const GameDev = () => {
     useEffect(() => {
        toggleHome()
@@ -23,7 +24,7 @@ const GameDev = () => {
            </HeroBg>
 
           <ServicesContainer id='курси'>
-           <ServicesH1 style={{color:"#3DB2FF",zIndex:"888"}}>Game DEV</ServicesH1>
+           <ServicesH1 style={{color:"#3DB2FF",zIndex:"888",fontWeight:"100"}}>Game DEV</ServicesH1>
            <ServicesWrapper>
                <ServicesCard>
                    <ServicesIcon src={Icon1}/>
@@ -59,8 +60,9 @@ const GameDev = () => {
                
             </ServicesWrapper>
          
-
+ 
        </ServicesContainer>
+      <Footer/>
         </>
        
        

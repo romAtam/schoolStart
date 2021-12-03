@@ -6,9 +6,11 @@ import Icon5 from '../../images/robot.svg'
 import Icon4 from '../../images/unity.svg'
 import Icon6 from '../../images/anim.svg'
 import{ServicesContainer,ServicesH1,ServicesWrapper,ServicesCard,ServicesH2,ServicesP,ServicesIcon} from './ServicesElements'
+import Footer from '../Footer';
 const Services = () => {
     return (
-       <ServicesContainer id='курси'>
+        <>
+        <ServicesContainer id='курси'>
            <ServicesH1>програма для дітей</ServicesH1>
            <ServicesWrapper>
                {/* <ServicesCard>
@@ -57,6 +59,9 @@ const Services = () => {
            </ServicesWrapper>
 
        </ServicesContainer>
+       <Footer/>
+        </>
+       
     )
 }
 

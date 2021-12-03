@@ -40,16 +40,17 @@ padding:0 50px;
 `
 export const ServicesCard=styled.div`
 z-index:4;
-background: rgba(0,0,0,0.3);
+background: rgba(0,0,0,0.1);
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: center;
-border-radius: 10px;
+border-radius: 30px;
 max-height: 340px;
 padding: 30px;
 border-bottom: 2px solid #3DB2FF;
-box-shadow: 0px 0px 7px 0px #01bf71;
+box-shadow: 0px 0px 1px 0px #3DB2FF;
+
 transition: all 0.2s ease-in-out;
 &:hover{
    
@@ -81,7 +82,7 @@ font-size:1rem;
 margin-bottom: 10px;;
 `
 export const ServicesP=styled.p`
-color:#01bf71;
+color:yellow;
 font-size:1rem;
 text-align: center;
 `

@@ -28,8 +28,8 @@ const Home = () => {
         {/* <Services/> */}
         <HeroSection  video={Video1} {...info3}/>
         <InfoSection page="kids"  {...homeObjThree}/>
+        
         <Footer/>
-
             
         </>
     )

@@ -1,6 +1,37 @@
 import React,{useState,useEffect} from 'react';
 import styled from "styled-components";
 import {Link as LinkR} from 'react-router-dom'
+
+export const ImgWrap=styled.img`
+
+width: 70%;
+
+margin-top: 8px;
+box-shadow: 1px 1px 7px 1px #3DB2FF;
+transition: all 0.3s ease-in-out;
+border-radius:100%;
+
+&:hover{
+    box-shadow: 2px 2px 87px 2px #3DB2FF;
+/* border:0.5px solid yellow; */
+border-radius:30px;
+
+}
+`
+export const UserName=styled.p`
+font-size: 1rem;
+font-weight:100;
+color:white;
+transition: all 0.5s ease;
+&:hover{
+    color:yellow;
+    transition: all 0.5s ease;
+    font-weight:300;
+}
+
+
+`
+
 export const LeadTeam=styled.div`
 
 
@@ -18,13 +49,13 @@ align-items:center;
 /* border-bottom: 2px solid #3DB2FF; */
 
 transition: all 0.2s ease-in-out;
-height:400px;
+height:600px;
 
 overflow: scroll;
 scroll-behavior: smooth;
 /* width */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 1px;
 }
 
 /* Track */
@@ -46,10 +77,11 @@ scroll-behavior: smooth;
 /* box-shadow: 2px 2px 7px 2px #3DB2FF; */
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
-    cursor: pointer;
+   
 }
 `
 export const LeadUser=styled.div`
+
 
 
 display: grid;
@@ -59,20 +91,24 @@ margin:8px ;
 justify-content: center;
 justify-items: center;
 align-items: center;
-border-radius: 10px;
-/* max-height: 340px; */
 
-border-bottom: 2px solid #3DB2FF;
 /* box-shadow: 0px 0px 7px 0px #01bf71; */
-transition: all 0.2s ease-in-out;
-&:hover{
+
+ border-top: 2px solid #3DB2FF;
    
-    border-right: 3px solid  #3DB2FF;
-    border-bottom: 3px solid  #3DB2FF;
-box-shadow: 2px 2px 7px 2px #3DB2FF;
+color:white;
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
+    border-radius: 10px;
+    padding: 30px;
+transition: all 0.2s ease-in-out;
+&:hover{
+    padding:10px;
+   border-radius: 50px;
+/* max-height: 340px; */
+border-top: 1px solid #3DB2FF;
+border-bottom: 1px solid #3DB2FF;
 }
 `
 const LeaderData = ({num}) => {
@@ -89,13 +125,13 @@ const LeaderData = ({num}) => {
     },[])
     return (
         <LeadTeam>
-         {leaddata.slice(num.start,num.end).map(user=>{
+         {leaddata.map(user=>{
              return(
                  <div key={user.login}>
-                       <LinkR  to={`/team/${user.login}`}>
+                       <LinkR style={{textDecoration: 'none'}}  to={`/team/${user.login}`}>
                    <LeadUser >
-                     <img style={{width: '70%',borderRadius:"20px",marginTop: '8px'}} src={user.avatar_url }alt="user" />
-                     <p style={{color: 'white'}}>{user.login}</p>
+                     <ImgWrap  src={user.avatar_url }alt="user" />
+                     <UserName >{user.login}</UserName>
                  </LeadUser >
                 
                 </LinkR>

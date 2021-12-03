@@ -6,6 +6,7 @@ background: #000;
 
 padding-bottom:5px;
 
+
 `
 export const FooterWrap=styled.div`
 
@@ -18,7 +19,7 @@ max-width:1100px;
 margin:0 auto;
 `
 export const FooterLinksContainer=styled.div`
-
+z-index:10;
 display: flex;
 justify-content: center;
 @media screen and (max-width:820px){

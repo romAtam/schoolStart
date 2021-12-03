@@ -41,7 +41,10 @@ display:flex;
 justify-content:center;
 align-items:center;
 transition: all 0.2s ease-in-out;
+background: #3DB2FF;
+text-decoration: none;
 &:hover{
+    
     box-shadow: 0px 0px 7px 0px #3DB2FF;
     font-weight: bold;
     transition: all 0.2s ease-in-out;

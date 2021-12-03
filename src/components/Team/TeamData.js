@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react';
 import styled from "styled-components";
 import {Link as LinkR} from 'react-router-dom'
+import {LeadUser,ImgWrap,UserName}from "../TeamUser/leaderTeam"
 export const Team=styled.div`
 
 
@@ -92,23 +93,33 @@ const TeamData = () => {
     },[])
     return (
         <Team>
-         {teamdata.map(user=>{
-             return(
-                 <div key={user.login}>
-                       <LinkR  to={`/team/${user.login}`}>
-                   <TeamUser >
-                     <img style={{width: '60%',borderRadius:"100%"}} src={user.avatar_url }alt="user" />
-                     <p style={{color: 'white'}}>{user.login}</p>
-                 </TeamUser>
-                
-                </LinkR>
 
-                 </div>
-              
-              
+            {teamdata.map(user =>{
 
-             )
-         })}
+  return(
+                 
+  
+        <div key={user.login}>
+              <LinkR style={{textDecoration: 'none'}}  to={`/team/${user.login}`}>
+          <LeadUser >
+            <ImgWrap  src={user.avatar_url }alt="user" />
+            <UserName >{user.login}</UserName>
+        </LeadUser >
+       
+       </LinkR>
+
+        </div>
+     
+     
+
+    )
+
+
+
+            })}
+       
+           
+       
             
         </Team>
     )

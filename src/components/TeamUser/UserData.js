@@ -13,6 +13,7 @@ margin: 0 auto;
 margin-top: 0px;
 display: grid;
 grid-template-columns:repeat(auto-fit,minmax(100px,1200px));
+grid-template-rows: 1fr 5fr;
 justify-content: center;
 background: transparent;
 grid-gap:20px;
@@ -22,14 +23,14 @@ font-size:20px;
 border-radius: 10px;
 /* max-height: 340px; */
 padding: 30px;
-border-bottom: 2px solid #3DB2FF;
-box-shadow: 0px 0px 7px 0px #01bf71;
+/* border-bottom: 2px solid #3DB2FF;
+box-shadow: 0px 0px 7px 0px #01bf71; */
 transition: all 0.2s ease-in-out;
 
  &:hover{
    
-    border-right: 3px solid #01bf71;
-    border-bottom: 3px solid #01bf71;
+    /* border-right: 3px solid #01bf71;
+    border-bottom: 3px solid #01bf71; */
 box-shadow: 2px 2px 7px 2px #3DB2FF;
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
@@ -84,7 +85,7 @@ const UserData = () => {
 
                           <LeadUser>
                 
-                      <img style={{borderRadius:"100%"}} width="100%" src={userdata.avatar_url }alt="user" />
+                      <img style={{borderRadius:"20%",boxShadow: "2px 2px 17px 2px #3DB2FF"}} width="100%" src={userdata.avatar_url }alt="user" />
                      </LeadUser>
                      <div >
                       <h2 style={{color:"#3DB2FF"}}>TEAM LEAD</h2>

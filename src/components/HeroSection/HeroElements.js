@@ -12,12 +12,14 @@ z-index:1;
 :before{
     content:'';
     position: absolute;
-    top: 0px;
+    top: -80px;
     left: 0;
     right: 0;
     bottom: 0;
-    background:  
-     linear-gradient(180deg, rgba(0,0,0,0)0%,rgba(0,0,0,0.9)100%);
+    background:     linear-gradient(to top, black, 40%, rgba(0,0,0,0)),
+    linear-gradient(to bottom, black, 40%, rgba(0,0,0,0));
+     /* linear-gradient(0deg, rgba(0,0,0,0)0%,rgba(0,0,0,0.9)100%),
+     linear-gradient(180deg, rgba(0,0,0,0)0%,rgba(0,0,0,0.1)100%); */
     z-index:2;
 
 }
@@ -31,7 +33,7 @@ bottom: 0;
 left: 0;
 width: 100%;
 height: 100%;
-overflow: hidden;
+overflow: visible;
 
 `
 export const VideoBg=styled.video`
