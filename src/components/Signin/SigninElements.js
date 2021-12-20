@@ -18,7 +18,7 @@ overflow: visible;
 
 `;
 export const FormWrap=styled.div`
-border:none;
+
 margin-top: 30px;
 height: auto;
 height:auto;
@@ -52,18 +52,22 @@ font-size:1.5rem;
 }
 `
 export const FormContent=styled.div`
-         
+  margin-top:10%;
 display: flex;
 flex-direction: column;
 justify-content:center;
+
 @media screen and (max-width:480px){
     padding: 10px;
 }
 `
 export const Form=styled.form`
-text-align: center;
 
-background: rgba(0,0,0,0.2);
+text-align: center;
+    box-shadow: 2px 1px 7px 1px blue; 
+border-radius:18px;
+background: rgb(38,37,37);
+background: linear-gradient(180deg, rgba(38,37,37,1) 0%, rgba(0,0,0,1) 18%, rgba(33,33,33,1) 100%);
 max-width:400px;
 height: auto;
 

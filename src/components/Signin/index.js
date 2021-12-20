@@ -1,9 +1,36 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Video from '../../videos/game.mp4'
 import{HeroBg,VideoBg,HeroContainer} from '../HeroSection/HeroElements'
 import {Container, FormInput, FormWrap, Icon,FormContent ,Form,FormH1,FormLabel,FormButton,Text} from './SigninElements'
+import { ButtonR } from '../ButtonElement'
+import { useDispatch } from 'react-redux'
+import { setStudent } from '../../store/slices/userSlice'
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import {useHistory} from "react-router-dom"
 
 const Signin = () => {
+    const auth = getAuth();
+    const{push}=useHistory()
+const dispatch=useDispatch()
+    const[email,setEmail]=useState("")
+    const[pass,setPass]=useState("")
+    const handleLogin=(email,pass)=>{
+        if(!email||!pass){
+            return
+        }
+        signInWithEmailAndPassword(auth, email, pass)
+        .then((userCredential) => {
+          // Signed in 
+          const user = userCredential.user;  console.log(user);
+          dispatch(setStudent({email:user.email,id:user.uid,token:user.accessToken}))
+           push("/cabinet")
+          // ...
+        })
+        .catch((error) => {
+        //   const errorCode = error.code;
+        //   const errorMessage = error.message;
+        });
+    }
     return (
         <>
      
@@ -18,13 +45,15 @@ const Signin = () => {
  <FormWrap>
                 {/* <Icon to='/'></Icon> */}
                 <FormContent>
-                    <Form action="#">
-                        <FormH1>password</FormH1>
+                    <Form onSubmit={e=>e.preventDefault()} action="#">
+                        <FormH1>log in</FormH1>
                         <FormLabel htmlFor='for'>Email</FormLabel>
-                        <FormInput autoFocus type='email' required/>
-                        <FormButton to='/cabinet' >Continue</FormButton>
+                        <FormInput placeholder="Enter email"value={email} onChange={(e)=>setEmail(e.target.value)} autoFocus type='email' required/>
+                        <FormLabel htmlFor='for'>password</FormLabel>
+                        <FormInput placeholder="password" value={pass} onChange={(e)=>setPass(e.target.value)} autoFocus type='password' required/>
+                        <FormButton onClick={()=>handleLogin(email,pass)} to='/cabinet' >Continue</FormButton>
                         <Text>Forgot Password</Text>
-
+                        or <ButtonR to='/register'>Register New Account</ButtonR>
 
                     </Form>
                 </FormContent>

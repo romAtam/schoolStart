@@ -17,10 +17,10 @@ const InfoSection = ({primary,dark,dark2,img,alt,lightBg,imgStart,topLine,id,lig
                        <Subtitle darkText={darkText}>{description}</Subtitle>
                        <BtnWrap>
                          
-                           <ButtonR 
+                           <ButtonR  
                            dark={dark?1:0}
                            dark2={dark2?1:0}
-                           primary={primary?1:0} smooth="true" duration={500} spy="true" exact="true" offset={-80} to={`/${page}`}>{buttonLabel}</ButtonR>
+                           primary={primary?1:0} smooth="true" duration={500} spy="true" exact="true" offset={-80} to={`/fiber`}>{buttonLabel}</ButtonR>
                        </BtnWrap>
                    </TextWrapper>
                    </Column1>

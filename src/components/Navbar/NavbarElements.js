@@ -31,7 +31,7 @@ max-width: 1100px;
 export const NavLogo=styled(LinkR)`
 
 padding: 0 3px;
-color:#fff;
+color:blue;
 justify-self: flex-start;
 cursor:pointer;
 font-size:1.1rem;
@@ -46,11 +46,14 @@ display: none;
 @media screen and (max-width:768px){
     display: block;
     position: absolute;
-    top:0;
+    top:10px;
     color:#fff;
-    right: 0;
-    transform: translate(-100%,60%);
+    right: 10px;
+    /* transform: translate(-100%,60%); */
     font-size: 1.8rem;
+    width: 60px;
+    height: 60px;
+
     cursor: pointer;
 }
 `
@@ -68,7 +71,7 @@ export const NavItem=styled.li`
 height: 80px;
 `
 export const NavLinks=styled(LinkR)`
-color:#fff;
+color:wheat;
 
 display: flex;
 align-items: center;
@@ -98,7 +101,7 @@ border-radius: 10px;
 background: transparent;
 white-space: nowrap;
 padding: 10px 22px;
-color:#fff;
+color:blue;
 font-size: 16px;
 outline: none;
 border:none;

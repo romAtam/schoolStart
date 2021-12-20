@@ -57,8 +57,8 @@ const Footer = () => {
               </FooterLinksContainer>
                <SocialMedia>
                    <SocialMediaWrap>
-                       <SocialLogo to='/'>simplyc<span style={{color:"orange"}}>IT</span>y</SocialLogo>
-                       <WebsiteRights>simplyc<span style={{color:"orange"}}>IT</span>y {new Date().getFullYear()}</WebsiteRights>
+                       <SocialLogo to='/'>Mad<span style={{color:"white"}}>De</span>Vision</SocialLogo>
+                       <WebsiteRights>Mad<span style={{color:"orange"}}>De</span>Vision {new Date().getFullYear()}</WebsiteRights>
                        <SocialIcons>
                        <SocialIconLink href="/" target="_blank" ><FaFacebook  /></SocialIconLink>
                            <SocialIconLink href="/" target="_blank" aria-label="Youtube"><FaYoutube /></SocialIconLink>

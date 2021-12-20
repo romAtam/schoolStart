@@ -1,8 +1,8 @@
 import React,{useState} from 'react'
 
-import {Button} from '../ButtonElement'
+import {ButtonR} from '../ButtonElement'
 import{HeroContainer,HeroBtnWrapper,ArrowForward,ArrowRight,HeroContent,HeroH1,HeroP,HeroBg,VideoBg} from './HeroElements'
-const HeroSection = ({header,descr,video}) => {
+const HeroSection = ({header,descr,video,toggle}) => {
     const[hover,setHover]=useState(false);
     const onHover=()=>{
         setHover(!hover);
@@ -17,7 +17,7 @@ const HeroSection = ({header,descr,video}) => {
                <HeroH1>{header}</HeroH1>
                <HeroP>{descr}  </HeroP>
                <HeroBtnWrapper>
-                   <Button dark='true' primary='true' onMouseLeave={onHover} onMouseEnter={onHover} to='signup'>дізнатися Більше{hover?<ArrowForward/>:<ArrowRight/>}</Button>
+                   <ButtonR onClick={toggle}  dark='true' primary='true' onMouseLeave={onHover} onMouseEnter={onHover} to='/chooseschool'>безкоштовне пробне заняття{hover?<ArrowForward/>:<ArrowRight/>}</ButtonR>
 
                </HeroBtnWrapper>
 

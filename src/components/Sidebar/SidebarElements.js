@@ -34,7 +34,9 @@ export const SidebarWrapper=styled.div`
 color:#fff;
 `
 export const SidebarLink=styled(LinkR)`
-
+box-shadow: 2px 2px 7px 2px #3DB2FF;
+margin-left: 0;
+padding: 0;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -47,7 +49,8 @@ color: #F8F5F1;
 cursor: pointer;
 &:hover{
     font-weight: bold;
-    box-shadow: 0px 0px 7px 0px #3DB2FF;
+    font-size: 2rem;
+    box-shadow: 2px 2px 7px 2px #3DB2FF;
     color:#F8F5F1;
     transition: 0.2s ease-in-out;
 }
@@ -61,21 +64,20 @@ export const SidebarRoute=styled(LinkR)`
 border-radius: 13px;
 
 border: 1px solid #3DB2FF;
-border-left: none;
-border-right: none;
+
 background: transparent;
 white-space: nowrap;
-padding:16px 64px;
+padding:16px 44px;
 color:#01bf71;
 font-size:16px;
-
+box-shadow: 1px 1px 1px 0px #3DB2FF;
 
 
 cursor: pointer;
 transition:all 0.2s ease-in-out;
 text-decoration: none;
 &:hover{
-    box-shadow: 0px 0px 7px 0px #3DB2FF;
+    box-shadow: 0px 4px 7px 4px yellow;
     font-weight: bold;
     transition:all 0.2s ease-in-out;
    
@@ -83,6 +85,8 @@ text-decoration: none;
 }
 `
 export const SidebarMenu=styled.ul`
+padding: 0%;
+   box-shadow: 3px 3px 7px 0px #3DB2FF;
 display: grid;
 grid-template-columns:1fr ;
 grid-template-rows: repeat(6,80px);
@@ -90,5 +94,7 @@ text-align: center;
 @media screen and (max-width:768px){
     grid-template-rows: repeat(6,60px);
 }
-
+&:hover{
+    box-shadow: 0px 0px 7px 0px yellow;
+}
 `

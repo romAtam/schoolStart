@@ -104,6 +104,7 @@ const TeamData = () => {
           <LeadUser >
             <ImgWrap  src={user.avatar_url }alt="user" />
             <UserName >{user.login}</UserName>
+            <UserName >{user.id}</UserName>
         </LeadUser >
        
        </LinkR>
